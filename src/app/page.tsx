@@ -24,12 +24,12 @@ export default function Home() {
           width={298}
           height={298}
           quality={100}
-
+          placeholder="blur"
 
           className="h-44 w-44 rounded shadow-lg sm:h-72 sm:w-72"
         />
 
-        <div className="flex flex-col gap-4 mt-10">
+        <div className="flex flex-col gap-4 mt-2">
           <div className="flex flex-col">
             <span className="font-mono text-base text-text-contrast sm:text-lg">
               Olá, meu nome é
@@ -47,14 +47,15 @@ export default function Home() {
           </div>
 
           <div className="mt-8 flex items-center gap-4">
-            <Button variant="primary" asChild>
+            
+           <Button variant="primary" asChild>
               <Link href="/about">Mais sobre mim</Link>
             </Button>
             <Button variant="outline" asChild>
               <a href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
                 Currículo
               </a>
-            </Button>
+            </Button> 
           </div>
         </div>
       </section>

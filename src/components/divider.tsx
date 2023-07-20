@@ -25,3 +25,5 @@ export const Divider = forwardRef<
         />
     ),
 );
+
+export default Divider;

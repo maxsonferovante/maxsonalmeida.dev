@@ -9,7 +9,7 @@ import cover from "../../../public/cover.png";
 
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Sobre",
 };
 
 export const revalidate = 3600; // 1 hour
@@ -45,7 +45,7 @@ export default async function AboutPage() {
           height={425}
           quality={100}
           placeholder="blur"
-          className="mt-8"
+          className="mt-4"
         />
 
         <div className="prose prose-lg mt-8 w-full max-w-none dark:prose-invert prose-p:text-accent-text prose-a:font-semibold prose-a:text-text-contrast prose-a:no-underline hover:prose-a:underline prose-strong:text-text-base sm:mt-14">
@@ -65,10 +65,23 @@ export default async function AboutPage() {
 
       <section className="py-14 sm:py-26">
         <h2 className="mb-6 text-3xl font-semibold leading-tight sm:text-4xl md:mb-10">
-          Skills
+          Ferramentas
         </h2>
         <div className="flex flex-wrap items-center gap-2">
           <Chip>HTML</Chip>
+          <Chip>CSS3</Chip>
+          <Chip>JavaScript</Chip>
+          <Chip>React</Chip>
+          <Chip>Next.js</Chip>
+          <Chip>Node.js</Chip>
+          <Chip>Express</Chip>
+          <Chip>Git</Chip>
+          <Chip>GitHub</Chip>
+          <Chip>Postgresql</Chip>
+          <Chip>MongoDB</Chip>
+          <Chip>Python</Chip>
+          <Chip>Django</Chip>
+
         </div>
       </section>
 
@@ -76,7 +89,7 @@ export default async function AboutPage() {
 
       <section className="py-14 sm:py-26">
         <h2 className="mb-18 text-3xl font-semibold leading-tight sm:mb-26 sm:text-4xl">
-          Professional Experience
+          Experiência profissional
         </h2>
 
         <div className="relative flex flex-col before:absolute before:left-[calc(3.75rem/2)] before:h-full before:w-[2px] before:bg-shape md:gap-8 md:before:left-1/2">

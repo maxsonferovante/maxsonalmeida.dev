@@ -38,3 +38,4 @@ export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
         );
     },
 );
+export default IconButton;
