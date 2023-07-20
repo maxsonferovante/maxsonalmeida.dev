@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600; // 1 hour
 
-export default async function AboutPage() {
+export default function AboutPage() {
 
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString("en-US", {
@@ -26,13 +26,15 @@ export default async function AboutPage() {
   return (
     <main className="flex-1 items-center justify-center mt-20">
 
-      <section className="pb-14 pt-8 sm:pb-26 sm:pt-16">
+      <section className="pb-14 pt-8 sm:pb-24 sm:pt-16">
         <header className="flex items-center justify-between">
           <h1 className="text-3xl font-semibold leading-tight sm:text-4xl">
             Sobre
           </h1>
           <Button variant="outline" asChild>
-            <a href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
+            <a 
+            className='font-mono text-base text-text-contrast sm:text-lg'
+            href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
               Currículo
             </a>
           </Button>
@@ -42,7 +44,7 @@ export default async function AboutPage() {
           src={cover}
           alt=""
           width={946}
-          height={425}
+          height={380}
           quality={100}
           placeholder="blur"
           className="mt-4"
@@ -73,11 +75,13 @@ export default async function AboutPage() {
           <Chip>JavaScript</Chip>
           <Chip>React</Chip>
           <Chip>Next.js</Chip>
+          <Chip>Tailwind CSS</Chip>
+          <Chip>Typescript</Chip>
           <Chip>Node.js</Chip>
           <Chip>Express</Chip>
           <Chip>Git</Chip>
           <Chip>GitHub</Chip>
-          <Chip>Postgresql</Chip>
+          <Chip>PostgreSQL</Chip>
           <Chip>MongoDB</Chip>
           <Chip>Python</Chip>
           <Chip>Django</Chip>

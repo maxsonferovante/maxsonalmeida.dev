@@ -13,6 +13,7 @@ import { Divider } from "@/components/divider";
 import avatar from "../../public/avatar.png";
 
 import linkBioLogo from "../imagens/projects/link.png";
+import apiRestNodeJS from "../imagens/projects/api.png";
 
 export default function Home() {
   return (
@@ -52,7 +53,9 @@ export default function Home() {
               <Link href="/about">Mais sobre mim</Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
+              <a 
+              className='font-mono text-base text-text-contrast sm:text-lg'
+              href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
                 Currículo
               </a>
             </Button> 
@@ -68,11 +71,11 @@ export default function Home() {
         </h2>
 
         <div className="mt-14 flex flex-col gap-16 sm:gap-26">
+          {/* Projeto Link Bio */}
           <div
             key="1"
             className={clsx("relative flex", {
-              "justify-start": "left",
-              "justify-end": "right",
+              "justify-end ": "right",
             })}
           >
             <Link href="/projects/link-bio-nextjs">
@@ -80,6 +83,7 @@ export default function Home() {
                 <Image
                   src={linkBioLogo}
                   alt="Link Bio"
+                  placeholder="blur"
                   sizes="100%"
                   layout="fill"
                   className="object-cover transition-transform hover:scale-105 lg:hover:transform-none"
@@ -90,14 +94,14 @@ export default function Home() {
             <div
               className={clsx(
                 "flex w-full flex-col lg:absolute lg:top-1/2 lg:w-[430px] lg:-translate-y-1/2",
-                {
-                  "items-end right-0": "left",
-                  "items-start left-0": "right",
+                {                  
+                  
+                  "items-start left-0": "left",
                 },
               )}
             >
               <Link
-                href="/projects/2"
+                href="/projects/link-bio-nextjs"
                 className="text-text-base transition hover:text-text-contrast"
               >
                 <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
@@ -106,6 +110,10 @@ export default function Home() {
               </Link>
 
               <div className="mt-4 flex flex-wrap items-center gap-2">
+                <Chip>React</Chip>
+                <Chip>Next.js</Chip>
+                <Chip>Tailwind CSS</Chip>
+                <Chip>Typescript</Chip>
                 {/* {project.technologies.slice(0, 2).map((tech) => (
                   <Chip
                     key={tech.id}
@@ -140,18 +148,101 @@ export default function Home() {
                 )}
               >
                 <p className="leading-normal">
-                  É projeto para agregar mais informações no perfil das redes sociais, com NextJS 13 e Tailwind CSS.
+                  É um projeto para agregar mais informações no perfil das redes sociais, com NextJS 13 e Tailwind CSS.
                 </p>
               </div>
             </div>
           </div>
+          
+          {/* Projeto Api Rest Node JS*/}
+          <div
+            key="1"
+            className={clsx("relative flex", {
+              "justify-start ": "left",              
+            })}
+          >
+            <Link href="/projects/link-bio-nextjs">
+              <div className="absolute top-26 -z-10 h-[216px] w-full overflow-hidden rounded border border-accent-border lg:relative lg:top-auto lg:z-auto lg:h-[328px] lg:w-[602px]">
+                <Image
+                  src={apiRestNodeJS}
+                  alt="Api Rest Node JS"
+                  placeholder="blur"
+                  sizes="100%"
+                  layout="fill"
+                  className="object-cover transition-transform hover:scale-105 lg:hover:transform-none"
+                />
+              </div>
+            </Link>
+
+            <div
+              className={clsx(
+                "flex w-full flex-col lg:absolute lg:top-1/2 lg:w-[430px] lg:-translate-y-1/2",
+                {                  
+                  "items-end right-0": "left",
+                  
+                },
+              )}
+            >
+              <Link
+                href="/projects/apirestnode"
+                className="text-text-base transition hover:text-text-contrast"
+              >
+                <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
+                  Api Rest Node JS
+                </h3>
+              </Link>
+
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <Chip>Node.js</Chip>
+                <Chip>Express</Chip>
+                <Chip>Typescript</Chip>
+                <Chip>PostgreSQL</Chip>
+                {/* {project.technologies.slice(0, 2).map((tech) => (
+                  <Chip
+                    key={tech.id}
+                    highlightColor={tech.highlightColor}
+                    asChild
+                  >
+                    <a
+                      href={tech.websiteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src={tech.image.url}
+                        alt={tech.name}
+                        width={18}
+                        height={18}
+                      />
+                      {tech.name}
+                    </a>
+                  </Chip> 
+                    ))}*/}
+
+              </div>
+
+              <div
+                className={clsx(
+                  "mt-40 w-[80vw] rounded bg-shape p-6 shadow-lg lg:mt-6 lg:w-auto",
+                  {
+                    "text-right": "left",
+                    "text-left": "right",
+                  },
+                )}
+              >
+                <p className="leading-normal">
+                  É um projeto para para praticar o uso do Node Js na construção de Api Rest, com uso de Express e PostgreSQL.
+                </p>
+              </div>
+            </div>
+          </div>    
 
         </div>
       </section>
 
       <section className="flex flex-col py-14 sm:pb-26 sm:pt-36">
         <h3 className="text-center text-2xl font-semibold sm:text-3xl">
-          Other Projects
+          Outros Projects
         </h3>
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 [&>a]:mx-auto">
