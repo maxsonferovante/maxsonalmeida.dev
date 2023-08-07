@@ -108,54 +108,44 @@ export default function AboutPage() {
         <h2 className="mb-18 text-3xl font-semibold leading-tight sm:mb-26 sm:text-4xl">
           Experiência profissional
         </h2>
+        <div className="prose prose-lg mt-8 w-full max-w-none dark:prose-invert prose-p:text-accent-text prose-a:font-semibold prose-a:text-text-contrast prose-a:no-underline hover:prose-a:underline prose-strong:text-text-base sm:mt-14">
+          <div className="mb-5">
+            <h3 className="text-xl font-semibold">Assistente Administrativo - Sindicato dos Portuários do Pará e Amapá (Fevereiro/2021 - Atualmente)</h3>
+            <ul className="list-disc list-inside ml-6">
+              <li>Atendimento aos(as) associados(as) com habilidades de comunicação e empatia.</li>
+              <li>Eficiente gerenciamento de tempo e organização para cumprir prazos.</li>
+              <li>Habilidades de trabalho em equipe para colaborar com colegas de diferentes áreas (Financeiro, Contábil e Jurídico).</li>
+              <li>Solução de problemas com criatividade e tomada de decisões embasadas.</li>
+              <li>Capacidade de gerenciar conflitos com calma e diplomacia.</li>
+              <li>Utilização de sistemas de cobrança automatizados para rastrear e gerenciar contas a receber, facilitando a gestão de pagamentos e reduzindo a inadimplência.</li>
+              <li>Negociação de prazos e condições de pagamento com os(as) associados(as), além de realizar follow-up proativo para garantir a liquidação de faturas pendentes, otimizando o fluxo de caixa da empresa.</li>
+            </ul>
+          </div>
 
-        <div className="relative flex flex-col before:absolute before:left-[calc(3.75rem/2)] before:h-full before:w-[2px] before:bg-shape md:gap-8 md:before:left-1/2">
-          {/*  {workExperiences.map((workExperience) => (
-            <div
-              key={workExperience.id}
-              className="flex items-center gap-6 even:flex-row md:items-start md:gap-0 md:even:flex-row-reverse"
-            >
-              <div className="z-20 flex h-[3.75rem] w-[3.75rem] shrink-0 items-center justify-center rounded-full bg-shape md:absolute md:left-1/2 md:ml-[calc(-3.75rem/2)]">
-                <Image
-                  src={workExperience.company!.logo.url}
-                  alt={workExperience.company!.name}
-                  width={40}
-                  height={40}
-                  className="h-10 w-10"
-                />
-              </div>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold">Presidente do Diretório de Belém do Pará - Unidade Popular (agosto/2020 - outubro/2022)</h3>
+            <ul className="list-disc list-inside ml-6">
+              <li>Experiente em oratória e condução de reuniões, demonstrando habilidades eficazes de comunicação para transmitir ideias de forma clara e persuasiva aos membros do partido e ao público em geral.</li>
+              <li>Capacidade de liderança comprovada, gerenciando equipes e motivando membros do partido para alcançar metas comuns.</li>
+              <li>Proficiente em planejamento de projetos e definição de estratégias, permitindo a tomada de decisões estratégicas.</li>
+              <li>Experiência em gerenciar equipes, identificar talentos e delegar responsabilidades, assegurando uma organização interna eficiente e eficaz.</li>
+              <li>Sólida compreensão das questões políticas, legislação e governança, permitindo tomar decisões informadas e estratégicas em consonância com os princípios do partido.</li>
+            </ul>
+          </div>
 
-              <div className="flex w-full flex-col md:w-[45%]">
-                <h3 className="flex flex-wrap items-center gap-2 text-2xl font-semibold leading-tight">
-                  {workExperience.role}
-                  <a
-                    href={workExperience.company!.websiteUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="relative font-semibold text-text-contrast hover:before:absolute hover:before:bottom-0 hover:before:h-px hover:before:w-full hover:before:bg-text-contrast"
-                  >
-                    @ {workExperience.company!.name}
-                  </a>
-                </h3>
-
-                <span className="mt-2 block font-mono text-accent-text">
-                  {formatDate(workExperience.startsAt)} -{" "}
-                  {workExperience.endsAt
-                    ? formatDate(workExperience.endsAt)
-                    : "present"}
-                </span>
-
-                <div
-                  className="prose prose-lg mt-4 dark:prose-invert prose-p:text-accent-text prose-a:font-semibold prose-a:text-text-contrast prose-a:no-underline hover:prose-a:underline prose-strong:text-text-base"
-                  dangerouslySetInnerHTML={{
-                    __html: workExperience.description.html,
-                  }}
-                />
-              </div>
-            </div>
-          ))} */}
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold">Atendente de Bar - Veropinha (agosto/2018 - março/2019)</h3>
+            <ul className="list-disc list-inside ml-6">
+              <li>Prestar atendimento aos clientes do estabelecimento, garantindo uma experiência positiva.</li>
+              <li>Coordenar a comunicação eficiente entre as equipes de cozinha e salão.</li>
+              <li>Lidar com situações de estresse de forma eficaz, mantendo a calma e resolvendo problemas.</li>
+              <li>Agilizar o atendimento e a organização de pedidos para garantir a eficiência do serviço.</li>
+              <li>Tratar os clientes com cuidado e atenção, assegurando que suas necessidades sejam atendidas de forma satisfatória.</li>
+            </ul>
+          </div>
         </div>
       </section>
+
     </main>
   );
 }
