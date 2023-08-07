@@ -32,9 +32,9 @@ export default function AboutPage() {
             Sobre
           </h1>
           <Button variant="outline" asChild>
-            <a 
-            className='font-mono text-base text-text-contrast sm:text-lg'
-            href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
+            <a
+              className='font-mono text-base text-text-contrast sm:text-lg'
+              href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
               Currículo
             </a>
           </Button>
@@ -52,14 +52,27 @@ export default function AboutPage() {
 
         <div className="prose prose-lg mt-8 w-full max-w-none dark:prose-invert prose-p:text-accent-text prose-a:font-semibold prose-a:text-text-contrast prose-a:no-underline hover:prose-a:underline prose-strong:text-text-base sm:mt-14">
           <p>
-            Uma introdução sobre quem sou.{" "}
-            <strong>
-              uma coisa que se destaca em mim é a minha paixão por tecnologia
-            </strong>
-            .
+            Paraense, amante da cultura local e não apreciador de açaí <strong>(mas o defendo com unhas e dentes)</strong>, amante das músicas brasileiras,
+            mesmo errando as letras todas as vez em que as canto. Sou quase como um rapaz latino americano, vindo do interior e com
+            parentes importantes. Apaixonado pelo pensamento humano crítico e semântico.
           </p>
-
-
+          <p>
+            Atualmente, estudante de Filosofia na Universidade do Estado do Pará e aluno bolsista da Cubos Academy no curso de Desenvolvimento de Software com foco em Back-end, o programa abrange diversos tópicos essenciais incluindo:
+            <br />
+            <strong>
+              Desenvolvimento de Software, Back-end , Banco de Dados,
+              JavaScript, TypeScript, Node.Js, Express.js, Prisma, API REST,
+              PostgreSQL, SQLite. Além do curso, tenho experiência com Python e Django.
+            </strong>
+          </p>
+          <p>
+            Acredito na educação geral e na programação como formas poderosas de resolução de problemas complexos com soluções
+            inovadoras para a sociedade. Nesse processo, sempre estou animado para as novas descobertas, trocas de experiências e das
+            particularidades dos envolvidos.
+          </p>
+          <p>
+            Então, se procura um parceiro para o desenvolvimento de soluções possibilitadas pela tecnologia ou para uma conversa profunda sobre
+            as questões existenciais da humanidade, vamos conversar. </p>
         </div>
       </section>
 
