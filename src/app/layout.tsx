@@ -7,7 +7,8 @@ import { siteConfig } from "@/config/site"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { Analytics } from "@/components/analytics";
+
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -65,8 +66,6 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         </div>
         <TailwindIndicator />
         <Analytics />
-
-
       </body>
     </html>
   )

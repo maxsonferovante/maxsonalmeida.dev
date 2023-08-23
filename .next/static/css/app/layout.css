@@ -1318,9 +1318,6 @@ video {
 .-z-10 {
   z-index: -10;
 }
-.z-20 {
-  z-index: 20;
-}
 .z-50 {
   z-index: 50;
 }
@@ -1331,11 +1328,17 @@ video {
 .mb-18 {
   margin-bottom: 4.5rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mt-10 {
-  margin-top: 2.5rem;
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-6 {
+  margin-left: 1.5rem;
 }
 .mt-14 {
   margin-top: 3.5rem;
@@ -1391,9 +1394,6 @@ video {
 .h-\[216px\] {
   height: 216px;
 }
-.h-\[3\.75rem\] {
-  height: 3.75rem;
-}
 .h-full {
   height: 100%;
 }
@@ -1408,9 +1408,6 @@ video {
 }
 .w-9 {
   width: 2.25rem;
-}
-.w-\[3\.75rem\] {
-  width: 3.75rem;
 }
 .w-\[80vw\] {
   width: 80vw;
@@ -1432,6 +1429,12 @@ video {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.list-inside {
+  list-style-position: inside;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1483,6 +1486,9 @@ video {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
 }
 .self-center {
   align-self: center;
@@ -1549,6 +1555,10 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1716,65 +1726,6 @@ body {
   --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
   --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
-}
-
-
-
-
-
-
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-
-
-
-
-
-.before\:left-\[calc\(3\.75rem\/2\)\]::before {
-  content: var(--tw-content);
-  left: calc(3.75rem / 2);
-}
-
-
-
-
-
-
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-
-
-
-
-
-.before\:w-\[2px\]::before {
-  content: var(--tw-content);
-  width: 2px;
-}
-
-
-
-
-
-
-.before\:bg-shape::before {
-  content: var(--tw-content);
-  background-color: var(--shape);
-}
-
-
-
-
-
-
-.even\:flex-row:nth-child(even) {
-  flex-direction: row;
 }
 
 
@@ -2514,6 +2465,10 @@ body {
     padding-bottom: 6.5rem;
   }
 
+  .sm\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .sm\:pb-26 {
     padding-bottom: 6.5rem;
   }
@@ -2552,20 +2507,8 @@ body {
 
 @media (min-width: 768px) {
 
-  .md\:absolute {
-    position: absolute;
-  }
-
-  .md\:left-1\/2 {
-    left: 50%;
-  }
-
   .md\:mb-10 {
     margin-bottom: 2.5rem;
-  }
-
-  .md\:ml-\[calc\(-3\.75rem\/2\)\] {
-    margin-left: calc(-3.75rem / 2);
   }
 
   .md\:mt-6 {
@@ -2580,33 +2523,8 @@ body {
     display: none;
   }
 
-  .md\:w-\[45\%\] {
-    width: 45%;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
-  .md\:before\:left-1\/2::before {
-    content: var(--tw-content);
-    left: 50%;
-  }
-
-  .md\:even\:flex-row-reverse:nth-child(even) {
-    flex-direction: row-reverse;
   }
 }
 
