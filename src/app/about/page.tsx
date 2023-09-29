@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "@/components/button";
 import { Chip } from "@/components/chip";
@@ -32,11 +33,11 @@ export default function AboutPage() {
             Sobre
           </h1>
           <Button variant="outline" asChild>
-            <a
-              className='font-mono text-base text-text-contrast sm:text-lg'
-              href="/Maxson Almeida Ferovante - Desenvolvedor de Software Backend.pdf" target="_blank">
+            <Link
+              href="/MaxsonAlmeidaFerovanteDesenvolvedordeSoftwareBackend.pdf" target="_blank"
+              className='font-mono text-base text-text-contrast sm:text-lg'>
               Currículo
-            </a>
+            </Link>
           </Button>
         </header>
 
@@ -60,9 +61,8 @@ export default function AboutPage() {
             Atualmente, estudante de Filosofia na Universidade do Estado do Pará e aluno bolsista da Cubos Academy no curso de Desenvolvimento de Software com foco em Back-end, o programa abrange diversos tópicos essenciais incluindo:
             <br />
             <strong>
-              Desenvolvimento de Software, Back-end , Banco de Dados,
-              JavaScript, TypeScript, Node.Js, Express.js, Prisma, API REST,
-              PostgreSQL, SQLite. Além do curso, tenho experiência com Python e Django.
+              Desenvolvimento de Software, Back-end , Banco de Dados, JavaScript, TypeScript, Node.Js, Express.js, Prisma, API REST, PostgreSQL,  SQLite, Docker, SOLID e JSON Web Tokens (JWT) .
+              Além do curso, tenho experiência com Python e Django.
             </strong>
           </p>
           <p>
@@ -86,19 +86,21 @@ export default function AboutPage() {
           <Chip>HTML</Chip>
           <Chip>CSS3</Chip>
           <Chip>JavaScript</Chip>
-          <Chip>React</Chip>
-          <Chip>Next.js</Chip>
-          <Chip>Tailwind CSS</Chip>
           <Chip>Typescript</Chip>
           <Chip>Node.js</Chip>
           <Chip>Express</Chip>
+          <Chip>Prisma ORM</Chip>
+          <Chip>JSON Web Tokens (JWT) </Chip>
+          <Chip>Docker</Chip>
+          <Chip>Docker Compose</Chip>
+          <Chip>POO</Chip>
+          <Chip>SOLID</Chip>
           <Chip>Git</Chip>
           <Chip>GitHub</Chip>
           <Chip>PostgreSQL</Chip>
           <Chip>MongoDB</Chip>
           <Chip>Python</Chip>
           <Chip>Django</Chip>
-
         </div>
       </section>
 
@@ -130,17 +132,6 @@ export default function AboutPage() {
               <li>Proficiente em planejamento de projetos e definição de estratégias, permitindo a tomada de decisões estratégicas.</li>
               <li>Experiência em gerenciar equipes, identificar talentos e delegar responsabilidades, assegurando uma organização interna eficiente e eficaz.</li>
               <li>Sólida compreensão das questões políticas, legislação e governança, permitindo tomar decisões informadas e estratégicas em consonância com os princípios do partido.</li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold">Atendente de Bar - Veropinha (agosto/2018 - março/2019)</h3>
-            <ul className="list-disc list-inside ml-6">
-              <li>Prestar atendimento aos clientes do estabelecimento, garantindo uma experiência positiva.</li>
-              <li>Coordenar a comunicação eficiente entre as equipes de cozinha e salão.</li>
-              <li>Lidar com situações de estresse de forma eficaz, mantendo a calma e resolvendo problemas.</li>
-              <li>Agilizar o atendimento e a organização de pedidos para garantir a eficiência do serviço.</li>
-              <li>Tratar os clientes com cuidado e atenção, assegurando que suas necessidades sejam atendidas de forma satisfatória.</li>
             </ul>
           </div>
         </div>

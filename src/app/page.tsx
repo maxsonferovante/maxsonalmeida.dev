@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import clsx from "clsx";
 
-import { getPlaiceholder } from "plaiceholder";
-
 import { Button } from "@/components/button";
 import { Chip } from "@/components/chip";
 import { Divider } from "@/components/divider";
@@ -12,7 +10,7 @@ import { Divider } from "@/components/divider";
 
 import avatar from "../../public/avatar.png";
 
-import linkBioLogo from "../imagens/projects/link.png";
+import rendtxLogo from "../imagens/projects/renthub-autonoleggio-noleggio-veicoli.webp";
 import apiRestNodeJS from "../imagens/projects/api.png";
 import apiRestMybank from "../imagens/projects/mybank.jpg";
 
@@ -54,11 +52,12 @@ export default function Home() {
               <Link href="/about">Mais sobre mim</Link>
             </Button>
             <Button variant="outline" asChild>
-              <a
-                className='font-mono text-base text-text-contrast sm:text-lg'
-                href="/Maxson Almeida Ferovante - Desenvolvedor de Software Backend" target="_blank">
+              <Link
+                href="/MaxsonAlmeidaFerovanteDesenvolvedordeSoftwareBackend.pdf" target="_blank"
+                className='font-mono text-base text-text-contrast sm:text-lg'>
                 Currículo
-              </a>
+              </Link>
+
             </Button>
           </div>
         </div>
@@ -81,11 +80,11 @@ export default function Home() {
               "justify-start ": "left",
             })}
           >
-            <Link href="/projects/link-bio-nextjs">
+            <Link href="https://github.com/maxsonferovante/SindiMeet">
               <div className="absolute top-26 -z-10 h-[216px] w-full overflow-hidden rounded border border-accent-border lg:relative lg:top-auto lg:z-auto lg:h-[328px] lg:w-[602px]">
                 <Image
                   src={apiRestNodeJS}
-                  alt="Api Rest Node JS"
+                  alt="SindiMeet - Api Rest"
                   placeholder="blur"
                   sizes="80%"
                   layout="fill"
@@ -104,21 +103,20 @@ export default function Home() {
               )}
             >
               <Link
-                href="https://github.com/maxsonferovante/test-backend"
-                className="text-text-base transition hover:text-text-contrast"
-
-              >
+                href="/projects/sindimeet"
+                className="text-text-base transition hover:text-text-contrast">
                 <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                  API RESTful - Node.js
+                  SindiMeet - Api Rest
                 </h3>
               </Link>
 
               <div className="mt-4 flex flex-wrap items-center gap-2">
                 <Chip>Node.js</Chip>
-                <Chip>Fastify</Chip>
                 <Chip>Typescript</Chip>
                 <Chip>PostgreSQL</Chip>
-
+                <Chip>Prisma ORM</Chip>
+                <Chip>JSON Web Tokens (JWT) </Chip>
+                <Chip>Express</Chip>
               </div>
 
               <div
@@ -131,7 +129,7 @@ export default function Home() {
                 )}
               >
                 <p className="leading-normal">
-                  É um projeto para para praticar o uso do Node.Js na construção de  API RESTful, com uso de Fastify e PostgreSQL.
+                  O SindiMeet é um sistema que visa facilitar o agendamento de atendimento jurídico para os associados de um sindicato.
                 </p>
               </div>
             </div>
@@ -208,11 +206,11 @@ export default function Home() {
               "justify-start ": "left",
             })}
           >
-            <Link href="https://github.com/maxsonferovante/LinkBioNextJS">
+            <Link href="https://github.com/maxsonferovante/ignite-nodejs-rentx">
               <div className="absolute top-26 -z-10 h-[216px] w-full overflow-hidden rounded border border-accent-border lg:relative lg:top-auto lg:z-auto lg:h-[328px] lg:w-[602px]">
                 <Image
-                  src={linkBioLogo}
-                  alt="Link Bio"
+                  src={rendtxLogo}
+                  alt="Rentx API Rest"
                   placeholder="blur"
                   sizes="100%"
                   layout="fill"
@@ -231,20 +229,21 @@ export default function Home() {
               )}
             >
               <Link
-                href="/projects/link-bio-nextjs"
+                href="/projects/rentx"
                 className="text-text-base transition hover:text-text-contrast"
               >
                 <h3 className="text-2xl font-semibold leading-tight sm:text-3xl">
-                  Link Bio Next.js
+                  Rentx API Rest
                 </h3>
               </Link>
 
               <div className="mt-4 flex flex-wrap items-center gap-2">
-                <Chip>React</Chip>
-                <Chip>Next.js</Chip>
-                <Chip>Tailwind CSS</Chip>
+                <Chip>Node.js</Chip>
+                <Chip>Express</Chip>
                 <Chip>Typescript</Chip>
-
+                <Chip>Prisma</Chip>
+                <Chip>PostgreSQL</Chip>
+                <Chip>SOLID</Chip>
               </div>
 
               <div
@@ -257,7 +256,7 @@ export default function Home() {
                 )}
               >
                 <p className="leading-normal">
-                  É um projeto para agregar mais informações no perfil das redes sociais, com NextJS 13 e Tailwind CSS.
+                  Tem como objetivo criar um sistema de gerenciamento para uma empresa de aluguel de carros
                 </p>
               </div>
             </div>
