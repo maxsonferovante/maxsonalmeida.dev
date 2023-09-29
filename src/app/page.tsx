@@ -40,7 +40,7 @@ export default function Home() {
               Maxson Almeida
             </h1>
             <p className="mt-4 text-base leading-normal text-accent-text sm:text-lg md:mt-6">
-              Eu sou Maxson Almeida, a Back-end Developer com Node.JS e entusiasta de Javascript e Python.
+              Eu sou Maxson Almeida, Desenvolvedor de Software Backend Node JS.
             </p>
           </div>
 
