@@ -34,7 +34,7 @@ export default function AboutPage() {
           <Button variant="outline" asChild>
             <a
               className='font-mono text-base text-text-contrast sm:text-lg'
-              href="/MaxsonAlmeidaBack-endDeveloper.pdf" target="_blank">
+              href="/Maxson Almeida Ferovante - Desenvolvedor de Software Backend.pdf" target="_blank">
               Currículo
             </a>
           </Button>
